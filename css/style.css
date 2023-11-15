@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #e2e3e5;
+    --b-color: #ffc107;
+}
+
+h3{
+    text-align: center;
+
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+body::-webkit-scrollbar-track{
+    background-color: var(--main-color);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--b-color);
+    border-radius: 10px;
+}
+
+.inputs{
+    width: 320px;
+    background-color: #ffc107;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+input{
+    border: none;
+    outline: none;
+    padding: 4px 10px;
+    border-radius: 5px 5px 0px 0px;
+}
+button{
+    border: none;
+    padding: 5px;
+    border-radius:0px 0px 5px 5px;
+    background-color: #fff;
+}
+.list{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.box{
+    width: 320px;
+    background-color: #e2e3e5;
+    border-radius: 0px 0px 5px 5px;
+    padding: 20px 20px 0px 20px;
+}
+.item{
+    cursor: move;
+    padding: 4px 10px;
+    background-color: var(--b-color);
+    border-radius: 5px;
+}
